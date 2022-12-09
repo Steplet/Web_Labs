@@ -9,11 +9,9 @@ body{
 
 header{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row ;
     width: 100%;
     background-color: orangered;
-    margin-left: 10em;
-    margin-right: 10em;
     padding: 1em;
 
 }
@@ -21,7 +19,7 @@ header{
     align-self: center;
 
     margin-left: 70%;
-    width: 10%;
+    width: auto;
     height: auto;
     background-color: mediumslateblue;
 
@@ -256,8 +254,71 @@ header{
     height: 15px;
 }
 .text{
+    margin-bottom: 5px;
     margin-left:50px ;
     width: 250px;
     height: 200px;
     background-color: olivedrab;
+}
+
+
+@media (max-width: 1250px) {
+    .photo{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .text{
+        width: 70%;
+        margin: 0;
+    }
+
+    .function{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+    }
+    .add_friend{
+        margin: 0;
+    }
+
+    .subscribes{
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+    .news{
+        margin: 0;
+    }
+
+
+    .extra_name{
+        width: auto;
+    }
+
+    header{
+
+    }
+    .settings{
+        margin-left: 60%;
+    }
+
+    .friends .member{
+        width: 2em;
+        height: 2em;
+    }
+    .pic{
+        width: 2em;
+        height: 2em;
+        margin-left: 25%;
+    }
+    .inform{
+        flex-flow: row nowrap;
+        padding-right: 20%;
+    }
+    .main_menu{
+        flex-flow: row nowrap;
+    }
 }
