@@ -1,0 +1,15 @@
+table, th, td{
+    border: 1px solid black;
+    text-align: center;
+    font-weight: normal;
+}
+
+table{
+    width: 50%;
+}
+
+.buttons{
+    display: flex;
+    flex-flow: row;
+}
+
